@@ -1,5 +1,4 @@
 # custom
-data_src/
 mongo-data/
 schemas/
 data_transform.ipynb
