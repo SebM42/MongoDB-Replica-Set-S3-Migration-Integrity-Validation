@@ -1,0 +1,49 @@
+services:
+  mongo1:
+    build:
+      context: .
+      dockerfile: Dockerfile.primary
+    container_name: mongo1
+    depends_on:
+      - mongo2
+      - mongo3
+    env_file:
+      - .env
+    ports:
+      - 27017:27017
+    volumes:
+      - ./mongo-data/mongo1:/data/db
+    networks:
+      - appnet
+
+  mongo2:
+    build:
+      context: .
+      dockerfile: Dockerfile.secondary
+    container_name: mongo2
+    volumes:
+      - ./mongo-data/mongo2:/data/db
+    networks:
+      - appnet
+    ports:
+      - 27018:27017
+
+  mongo3:
+    build:
+      context: .
+      dockerfile: Dockerfile.secondary
+    container_name: mongo3
+    volumes:
+      - ./mongo-data/mongo3:/data/db
+    networks:
+      - appnet
+    ports:
+      - 27019:27017
+
+networks:
+  appnet:
+    driver: bridge
+
+volumes:
+  mongo-data:
+    driver: local

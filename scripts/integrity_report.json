@@ -1,0 +1,1105 @@
+[
+  {
+    "s3_key": "migration_data/data.json",
+    "collection": "data",
+    "n_rows_s3": 4950,
+    "n_rows_mongo": 4950,
+    "s3_report": {
+      "n_rows": 4950,
+      "fields": [
+        "UV",
+        "id_station",
+        "dh_utc",
+        "temperature",
+        "point_de_rosee",
+        "humidite",
+        "vent_direction",
+        "vent_moyen",
+        "vent_rafales",
+        "pression",
+        "taux_precipitation",
+        "precipitation_cumul",
+        "solaire",
+        "visibilite",
+        "pluie_3h",
+        "pluie_1h",
+        "neige_au_sol",
+        "nebulosite",
+        "temps_omm"
+      ],
+      "dtypes": {
+        "UV": "float64",
+        "id_station": "object",
+        "dh_utc": "datetime64[ns]",
+        "temperature": "object",
+        "point_de_rosee": "object",
+        "humidite": "object",
+        "vent_direction": "object",
+        "vent_moyen": "object",
+        "vent_rafales": "object",
+        "pression": "object",
+        "taux_precipitation": "float64",
+        "precipitation_cumul": "float64",
+        "solaire": "float64",
+        "visibilite": "object",
+        "pluie_3h": "object",
+        "pluie_1h": "object",
+        "neige_au_sol": "float64",
+        "nebulosite": "object",
+        "temps_omm": "object"
+      },
+      "missing": {
+        "UV": 1143,
+        "id_station": 0,
+        "dh_utc": 0,
+        "temperature": 0,
+        "point_de_rosee": 0,
+        "humidite": 0,
+        "vent_direction": 88,
+        "vent_moyen": 0,
+        "vent_rafales": 1083,
+        "pression": 0,
+        "taux_precipitation": 1143,
+        "precipitation_cumul": 1143,
+        "solaire": 1143,
+        "visibilite": 4890,
+        "pluie_3h": 4859,
+        "pluie_1h": 4707,
+        "neige_au_sol": 4950,
+        "nebulosite": 4890,
+        "temps_omm": 4941
+      },
+      "exact_duplicates": 0,
+      "sample_values": {
+        "UV": [
+          "0.0",
+          "1.0",
+          "2.0",
+          "5.0",
+          "3.0"
+        ],
+        "id_station": [
+          "IICHTE19",
+          "ILAMAD25",
+          "07015",
+          "00052",
+          "000R5"
+        ],
+        "dh_utc": [
+          "2024-10-01 00:04:00",
+          "2024-10-01 00:09:00",
+          "2024-10-01 00:14:00",
+          "2024-10-01 00:19:00",
+          "2024-10-01 00:24:00"
+        ],
+        "temperature": [
+          "13.8",
+          "13.9",
+          "14.0",
+          "13.7",
+          "13.6"
+        ],
+        "point_de_rosee": [
+          "11.7",
+          "11.6",
+          "11.5",
+          "11.4",
+          "11.3"
+        ],
+        "humidite": [
+          "87",
+          "86",
+          "85",
+          "84",
+          "83"
+        ],
+        "vent_direction": [
+          "247.5",
+          "270.0",
+          "225.0",
+          "202.5",
+          "180.0"
+        ],
+        "vent_moyen": [
+          "13.2",
+          "12.7",
+          "16.6",
+          "15.6",
+          "15.4"
+        ],
+        "vent_rafales": [
+          "16.7",
+          "15.8",
+          "20.6",
+          "19.6",
+          "19.2"
+        ],
+        "pression": [
+          "998.3",
+          "998.0",
+          "997.6",
+          "998.6",
+          "999.0"
+        ],
+        "taux_precipitation": [
+          "0.0",
+          "1.8",
+          "1.3",
+          "3.0",
+          "7.9"
+        ],
+        "precipitation_cumul": [
+          "0.0",
+          "0.3",
+          "0.5",
+          "0.8",
+          "1.0"
+        ],
+        "solaire": [
+          "0.0",
+          "0.1",
+          "0.2",
+          "0.4",
+          "0.8"
+        ],
+        "visibilite": [
+          "6000",
+          "7000",
+          "4400",
+          "2500",
+          "500"
+        ],
+        "pluie_3h": [
+          "0",
+          "0.2",
+          "0.5",
+          "0.7",
+          "2.6"
+        ],
+        "pluie_1h": [
+          "0",
+          "0.2",
+          "0.5",
+          "1.8",
+          "0.8"
+        ],
+        "neige_au_sol": [],
+        "nebulosite": [
+          "",
+          "8",
+          "7",
+          "6"
+        ],
+        "temps_omm": [
+          "10",
+          "44",
+          "45",
+          "61"
+        ]
+      }
+    },
+    "mongo_report": {
+      "n_rows": 4950,
+      "fields": [
+        "_id",
+        "UV",
+        "id_station",
+        "dh_utc",
+        "temperature",
+        "point_de_rosee",
+        "humidite",
+        "vent_direction",
+        "vent_moyen",
+        "vent_rafales",
+        "pression",
+        "taux_precipitation",
+        "precipitation_cumul",
+        "solaire",
+        "visibilite",
+        "pluie_3h",
+        "pluie_1h",
+        "neige_au_sol",
+        "nebulosite",
+        "temps_omm"
+      ],
+      "dtypes": {
+        "_id": "object",
+        "UV": "float64",
+        "id_station": "object",
+        "dh_utc": "datetime64[ns]",
+        "temperature": "object",
+        "point_de_rosee": "object",
+        "humidite": "object",
+        "vent_direction": "object",
+        "vent_moyen": "object",
+        "vent_rafales": "object",
+        "pression": "object",
+        "taux_precipitation": "float64",
+        "precipitation_cumul": "float64",
+        "solaire": "float64",
+        "visibilite": "object",
+        "pluie_3h": "object",
+        "pluie_1h": "object",
+        "neige_au_sol": "float64",
+        "nebulosite": "object",
+        "temps_omm": "object"
+      },
+      "missing": {
+        "_id": 0,
+        "UV": 1143,
+        "id_station": 0,
+        "dh_utc": 0,
+        "temperature": 0,
+        "point_de_rosee": 0,
+        "humidite": 0,
+        "vent_direction": 88,
+        "vent_moyen": 0,
+        "vent_rafales": 1083,
+        "pression": 0,
+        "taux_precipitation": 1143,
+        "precipitation_cumul": 1143,
+        "solaire": 1143,
+        "visibilite": 4890,
+        "pluie_3h": 4859,
+        "pluie_1h": 4707,
+        "neige_au_sol": 4950,
+        "nebulosite": 4890,
+        "temps_omm": 4941
+      },
+      "exact_duplicates": 0,
+      "sample_values": {
+        "_id": [
+          "698c68c3ac871d4ed5cfb7fc",
+          "698c68c3ac871d4ed5cfb7fd",
+          "698c68c3ac871d4ed5cfb7fe",
+          "698c68c3ac871d4ed5cfb7ff",
+          "698c68c3ac871d4ed5cfb800"
+        ],
+        "UV": [
+          "0.0",
+          "1.0",
+          "2.0",
+          "5.0",
+          "3.0"
+        ],
+        "id_station": [
+          "IICHTE19",
+          "ILAMAD25",
+          "07015",
+          "00052",
+          "000R5"
+        ],
+        "dh_utc": [
+          "2024-10-01 00:04:00",
+          "2024-10-01 00:09:00",
+          "2024-10-01 00:14:00",
+          "2024-10-01 00:19:00",
+          "2024-10-01 00:24:00"
+        ],
+        "temperature": [
+          "13.8",
+          "13.9",
+          "14.0",
+          "13.7",
+          "13.6"
+        ],
+        "point_de_rosee": [
+          "11.7",
+          "11.6",
+          "11.5",
+          "11.4",
+          "11.3"
+        ],
+        "humidite": [
+          "87",
+          "86",
+          "85",
+          "84",
+          "83"
+        ],
+        "vent_direction": [
+          "247.5",
+          "270.0",
+          "225.0",
+          "202.5",
+          "180.0"
+        ],
+        "vent_moyen": [
+          "13.2",
+          "12.7",
+          "16.6",
+          "15.6",
+          "15.4"
+        ],
+        "vent_rafales": [
+          "16.7",
+          "15.8",
+          "20.6",
+          "19.6",
+          "19.2"
+        ],
+        "pression": [
+          "998.3",
+          "998.0",
+          "997.6",
+          "998.6",
+          "999.0"
+        ],
+        "taux_precipitation": [
+          "0.0",
+          "1.8",
+          "1.3",
+          "3.0",
+          "7.9"
+        ],
+        "precipitation_cumul": [
+          "0.0",
+          "0.3",
+          "0.5",
+          "0.8",
+          "1.0"
+        ],
+        "solaire": [
+          "0.0",
+          "0.1",
+          "0.2",
+          "0.4",
+          "0.8"
+        ],
+        "visibilite": [
+          "6000",
+          "7000",
+          "4400",
+          "2500",
+          "500"
+        ],
+        "pluie_3h": [
+          "0",
+          "0.2",
+          "0.5",
+          "0.7",
+          "2.6"
+        ],
+        "pluie_1h": [
+          "0",
+          "0.2",
+          "0.5",
+          "1.8",
+          "0.8"
+        ],
+        "neige_au_sol": [],
+        "nebulosite": [
+          "",
+          "8",
+          "7",
+          "6"
+        ],
+        "temps_omm": [
+          "10",
+          "44",
+          "45",
+          "61"
+        ]
+      }
+    },
+    "comparison": {
+      "fields_only_in_s3": [],
+      "fields_only_in_mongo": [
+        "_id"
+      ],
+      "dtype_mismatches": {}
+    },
+    "duplicate_key_checks": {},
+    "missing_comparison": {
+      "temps_omm": {
+        "s3_missing": 4941,
+        "mongo_missing": 4941
+      },
+      "vent_direction": {
+        "s3_missing": 88,
+        "mongo_missing": 88
+      },
+      "temperature": {
+        "s3_missing": 0,
+        "mongo_missing": 0
+      },
+      "solaire": {
+        "s3_missing": 1143,
+        "mongo_missing": 1143
+      },
+      "point_de_rosee": {
+        "s3_missing": 0,
+        "mongo_missing": 0
+      },
+      "UV": {
+        "s3_missing": 1143,
+        "mongo_missing": 1143
+      },
+      "taux_precipitation": {
+        "s3_missing": 1143,
+        "mongo_missing": 1143
+      },
+      "visibilite": {
+        "s3_missing": 4890,
+        "mongo_missing": 4890
+      },
+      "vent_moyen": {
+        "s3_missing": 0,
+        "mongo_missing": 0
+      },
+      "pluie_1h": {
+        "s3_missing": 4707,
+        "mongo_missing": 4707
+      },
+      "dh_utc": {
+        "s3_missing": 0,
+        "mongo_missing": 0
+      },
+      "pression": {
+        "s3_missing": 0,
+        "mongo_missing": 0
+      },
+      "_id": {
+        "s3_missing": null,
+        "mongo_missing": 0
+      },
+      "humidite": {
+        "s3_missing": 0,
+        "mongo_missing": 0
+      },
+      "vent_rafales": {
+        "s3_missing": 1083,
+        "mongo_missing": 1083
+      },
+      "nebulosite": {
+        "s3_missing": 4890,
+        "mongo_missing": 4890
+      },
+      "id_station": {
+        "s3_missing": 0,
+        "mongo_missing": 0
+      },
+      "precipitation_cumul": {
+        "s3_missing": 1143,
+        "mongo_missing": 1143
+      },
+      "pluie_3h": {
+        "s3_missing": 4859,
+        "mongo_missing": 4859
+      },
+      "neige_au_sol": {
+        "s3_missing": 4950,
+        "mongo_missing": 4950
+      }
+    }
+  },
+  {
+    "s3_key": "migration_data/metadata.json",
+    "collection": "metadata",
+    "n_rows_s3": 1,
+    "n_rows_mongo": 1,
+    "s3_report": {
+      "n_rows": 1,
+      "fields": [
+        "temperature",
+        "pression",
+        "humidite",
+        "point_de_rosee",
+        "visibilite",
+        "vent_moyen",
+        "vent_rafales",
+        "vent_direction",
+        "pluie_3h",
+        "pluie_1h",
+        "neige_au_sol",
+        "nebulosite",
+        "temps_omm",
+        "taux_precipitation",
+        "precipitation_cumul",
+        "solaire",
+        "UV"
+      ],
+      "dtypes": {
+        "temperature": "object",
+        "pression": "object",
+        "humidite": "object",
+        "point_de_rosee": "object",
+        "visibilite": "object",
+        "vent_moyen": "object",
+        "vent_rafales": "object",
+        "vent_direction": "object",
+        "pluie_3h": "object",
+        "pluie_1h": "object",
+        "neige_au_sol": "object",
+        "nebulosite": "object",
+        "temps_omm": "object",
+        "taux_precipitation": "object",
+        "precipitation_cumul": "object",
+        "solaire": "object",
+        "UV": "object"
+      },
+      "missing": {
+        "temperature": 0,
+        "pression": 0,
+        "humidite": 0,
+        "point_de_rosee": 0,
+        "visibilite": 0,
+        "vent_moyen": 0,
+        "vent_rafales": 0,
+        "vent_direction": 0,
+        "pluie_3h": 0,
+        "pluie_1h": 0,
+        "neige_au_sol": 0,
+        "nebulosite": 0,
+        "temps_omm": 0,
+        "taux_precipitation": 0,
+        "precipitation_cumul": 0,
+        "solaire": 0,
+        "UV": 0
+      },
+      "exact_duplicates": 0,
+      "sample_values": {
+        "temperature": [
+          "temperature,degC"
+        ],
+        "pression": [
+          "mean sea level pressure,hPa"
+        ],
+        "humidite": [
+          "relative humidity,%"
+        ],
+        "point_de_rosee": [
+          "dewpoint,degC"
+        ],
+        "visibilite": [
+          "horizontal visibility,m"
+        ],
+        "vent_moyen": [
+          "mean wind speed,km/h"
+        ],
+        "vent_rafales": [
+          "wind gust,km/h"
+        ],
+        "vent_direction": [
+          "wind direction,deg"
+        ],
+        "pluie_3h": [
+          "precipitation over 3h,mm"
+        ],
+        "pluie_1h": [
+          "precipitation over 1h,mm"
+        ],
+        "neige_au_sol": [
+          "snow depth,cm"
+        ],
+        "nebulosite": [
+          "Ncloud cover,octats"
+        ],
+        "temps_omm": [
+          "present weather,http://www.infoclimat.fr/stations-meteo/ww.php"
+        ],
+        "taux_precipitation": [
+          "mm"
+        ],
+        "precipitation_cumul": [
+          "mm"
+        ],
+        "solaire": [
+          "w/m²"
+        ],
+        "UV": [
+          "sans unité"
+        ]
+      }
+    },
+    "mongo_report": {
+      "n_rows": 1,
+      "fields": [
+        "_id",
+        "temperature",
+        "pression",
+        "humidite",
+        "point_de_rosee",
+        "visibilite",
+        "vent_moyen",
+        "vent_rafales",
+        "vent_direction",
+        "pluie_3h",
+        "pluie_1h",
+        "neige_au_sol",
+        "nebulosite",
+        "temps_omm",
+        "taux_precipitation",
+        "precipitation_cumul",
+        "solaire",
+        "UV"
+      ],
+      "dtypes": {
+        "_id": "object",
+        "temperature": "object",
+        "pression": "object",
+        "humidite": "object",
+        "point_de_rosee": "object",
+        "visibilite": "object",
+        "vent_moyen": "object",
+        "vent_rafales": "object",
+        "vent_direction": "object",
+        "pluie_3h": "object",
+        "pluie_1h": "object",
+        "neige_au_sol": "object",
+        "nebulosite": "object",
+        "temps_omm": "object",
+        "taux_precipitation": "object",
+        "precipitation_cumul": "object",
+        "solaire": "object",
+        "UV": "object"
+      },
+      "missing": {
+        "_id": 0,
+        "temperature": 0,
+        "pression": 0,
+        "humidite": 0,
+        "point_de_rosee": 0,
+        "visibilite": 0,
+        "vent_moyen": 0,
+        "vent_rafales": 0,
+        "vent_direction": 0,
+        "pluie_3h": 0,
+        "pluie_1h": 0,
+        "neige_au_sol": 0,
+        "nebulosite": 0,
+        "temps_omm": 0,
+        "taux_precipitation": 0,
+        "precipitation_cumul": 0,
+        "solaire": 0,
+        "UV": 0
+      },
+      "exact_duplicates": 0,
+      "sample_values": {
+        "_id": [
+          "698c68c3ac871d4ed5cfcb52"
+        ],
+        "temperature": [
+          "temperature,degC"
+        ],
+        "pression": [
+          "mean sea level pressure,hPa"
+        ],
+        "humidite": [
+          "relative humidity,%"
+        ],
+        "point_de_rosee": [
+          "dewpoint,degC"
+        ],
+        "visibilite": [
+          "horizontal visibility,m"
+        ],
+        "vent_moyen": [
+          "mean wind speed,km/h"
+        ],
+        "vent_rafales": [
+          "wind gust,km/h"
+        ],
+        "vent_direction": [
+          "wind direction,deg"
+        ],
+        "pluie_3h": [
+          "precipitation over 3h,mm"
+        ],
+        "pluie_1h": [
+          "precipitation over 1h,mm"
+        ],
+        "neige_au_sol": [
+          "snow depth,cm"
+        ],
+        "nebulosite": [
+          "Ncloud cover,octats"
+        ],
+        "temps_omm": [
+          "present weather,http://www.infoclimat.fr/stations-meteo/ww.php"
+        ],
+        "taux_precipitation": [
+          "mm"
+        ],
+        "precipitation_cumul": [
+          "mm"
+        ],
+        "solaire": [
+          "w/m²"
+        ],
+        "UV": [
+          "sans unité"
+        ]
+      }
+    },
+    "comparison": {
+      "fields_only_in_s3": [],
+      "fields_only_in_mongo": [
+        "_id"
+      ],
+      "dtype_mismatches": {}
+    },
+    "duplicate_key_checks": {},
+    "missing_comparison": {
+      "pression": {
+        "s3_missing": 0,
+        "mongo_missing": 0
+      },
+      "_id": {
+        "s3_missing": null,
+        "mongo_missing": 0
+      },
+      "temps_omm": {
+        "s3_missing": 0,
+        "mongo_missing": 0
+      },
+      "humidite": {
+        "s3_missing": 0,
+        "mongo_missing": 0
+      },
+      "vent_direction": {
+        "s3_missing": 0,
+        "mongo_missing": 0
+      },
+      "temperature": {
+        "s3_missing": 0,
+        "mongo_missing": 0
+      },
+      "solaire": {
+        "s3_missing": 0,
+        "mongo_missing": 0
+      },
+      "vent_rafales": {
+        "s3_missing": 0,
+        "mongo_missing": 0
+      },
+      "point_de_rosee": {
+        "s3_missing": 0,
+        "mongo_missing": 0
+      },
+      "nebulosite": {
+        "s3_missing": 0,
+        "mongo_missing": 0
+      },
+      "UV": {
+        "s3_missing": 0,
+        "mongo_missing": 0
+      },
+      "taux_precipitation": {
+        "s3_missing": 0,
+        "mongo_missing": 0
+      },
+      "visibilite": {
+        "s3_missing": 0,
+        "mongo_missing": 0
+      },
+      "vent_moyen": {
+        "s3_missing": 0,
+        "mongo_missing": 0
+      },
+      "pluie_1h": {
+        "s3_missing": 0,
+        "mongo_missing": 0
+      },
+      "precipitation_cumul": {
+        "s3_missing": 0,
+        "mongo_missing": 0
+      },
+      "pluie_3h": {
+        "s3_missing": 0,
+        "mongo_missing": 0
+      },
+      "neige_au_sol": {
+        "s3_missing": 0,
+        "mongo_missing": 0
+      }
+    }
+  },
+  {
+    "s3_key": "migration_data/stations.json",
+    "collection": "stations",
+    "n_rows_s3": 6,
+    "n_rows_mongo": 6,
+    "s3_report": {
+      "n_rows": 6,
+      "fields": [
+        "id",
+        "name",
+        "latitude",
+        "longitude",
+        "elevation",
+        "type",
+        "license",
+        "city",
+        "state",
+        "hardware",
+        "software"
+      ],
+      "dtypes": {
+        "id": "object",
+        "name": "object",
+        "latitude": "float64",
+        "longitude": "float64",
+        "elevation": "int64",
+        "type": "object",
+        "license": "object",
+        "city": "object",
+        "state": "object",
+        "hardware": "object",
+        "software": "object"
+      },
+      "missing": {
+        "id": 0,
+        "name": 0,
+        "latitude": 0,
+        "longitude": 0,
+        "elevation": 0,
+        "type": 2,
+        "license": 2,
+        "city": 4,
+        "state": 4,
+        "hardware": 4,
+        "software": 4
+      },
+      "exact_duplicates": 0,
+      "sample_values": {
+        "id": [
+          "00052",
+          "000R5",
+          "07015",
+          "STATIC0010",
+          "ILAMAD25"
+        ],
+        "name": [
+          "Armentières",
+          "Bergues",
+          "Lille-Lesquin",
+          "Hazebrouck",
+          "La Madeleine"
+        ],
+        "latitude": [
+          "50.689",
+          "50.968",
+          "50.575",
+          "50.734",
+          "50.659"
+        ],
+        "longitude": [
+          "2.877",
+          "2.441",
+          "3.092",
+          "2.545",
+          "3.07"
+        ],
+        "elevation": [
+          "16",
+          "17",
+          "47",
+          "31",
+          "23"
+        ],
+        "type": [
+          "static",
+          "synop"
+        ],
+        "license": [
+          "{\"license\": \"CC BY\", \"url\": \"https://creativecommons.org/licenses/by/2.0/fr/\", \"source\": \"infoclimat.fr\", \"metadonnees\": \"https://www.infoclimat.fr/stations/metadonnees.php?id=00052\"}",
+          "{\"license\": \"CC BY\", \"url\": \"https://creativecommons.org/licenses/by/2.0/fr/\", \"source\": \"infoclimat.fr\", \"metadonnees\": \"https://www.infoclimat.fr/stations/metadonnees.php?id=000R5\"}",
+          "{\"license\": \"Etalab Open License\", \"url\": \"https://www.etalab.gouv.fr/licence-ouverte-open-licence\", \"source\": \"Meteo-France via infoclimat.fr\", \"metadonnees\": \"https://donneespubliques.meteofrance.fr/metadonnees_publiques/fiches/fiche_59343001.pdf\"}",
+          "{\"license\": \"CC BY\", \"url\": \"https://creativecommons.org/licenses/by/2.0/fr/\", \"source\": \"infoclimat.fr\", \"metadonnees\": \"https://www.infoclimat.fr/stations/metadonnees.php?id=STATIC0010\"}"
+        ],
+        "city": [
+          "La Madeleine",
+          "Ichtegem"
+        ],
+        "state": [
+          "-/-"
+        ],
+        "hardware": [
+          "other"
+        ],
+        "software": [
+          "EasyWeatherPro_V5.1.6",
+          "EasyWeatherV1.6.6"
+        ]
+      }
+    },
+    "mongo_report": {
+      "n_rows": 6,
+      "fields": [
+        "_id",
+        "id",
+        "name",
+        "latitude",
+        "longitude",
+        "elevation",
+        "type",
+        "license",
+        "city",
+        "state",
+        "hardware",
+        "software"
+      ],
+      "dtypes": {
+        "_id": "object",
+        "id": "object",
+        "name": "object",
+        "latitude": "float64",
+        "longitude": "float64",
+        "elevation": "int64",
+        "type": "object",
+        "license": "object",
+        "city": "object",
+        "state": "object",
+        "hardware": "object",
+        "software": "object"
+      },
+      "missing": {
+        "_id": 0,
+        "id": 0,
+        "name": 0,
+        "latitude": 0,
+        "longitude": 0,
+        "elevation": 0,
+        "type": 2,
+        "license": 2,
+        "city": 4,
+        "state": 4,
+        "hardware": 4,
+        "software": 4
+      },
+      "exact_duplicates": 0,
+      "sample_values": {
+        "_id": [
+          "698c68c3ac871d4ed5cfcb53",
+          "698c68c3ac871d4ed5cfcb54",
+          "698c68c3ac871d4ed5cfcb55",
+          "698c68c3ac871d4ed5cfcb56",
+          "698c68c3ac871d4ed5cfcb57"
+        ],
+        "id": [
+          "00052",
+          "000R5",
+          "07015",
+          "STATIC0010",
+          "ILAMAD25"
+        ],
+        "name": [
+          "Armentières",
+          "Bergues",
+          "Lille-Lesquin",
+          "Hazebrouck",
+          "La Madeleine"
+        ],
+        "latitude": [
+          "50.689",
+          "50.968",
+          "50.575",
+          "50.734",
+          "50.659"
+        ],
+        "longitude": [
+          "2.877",
+          "2.441",
+          "3.092",
+          "2.545",
+          "3.07"
+        ],
+        "elevation": [
+          "16",
+          "17",
+          "47",
+          "31",
+          "23"
+        ],
+        "type": [
+          "static",
+          "synop"
+        ],
+        "license": [
+          "{\"license\": \"CC BY\", \"url\": \"https://creativecommons.org/licenses/by/2.0/fr/\", \"source\": \"infoclimat.fr\", \"metadonnees\": \"https://www.infoclimat.fr/stations/metadonnees.php?id=00052\"}",
+          "{\"license\": \"CC BY\", \"url\": \"https://creativecommons.org/licenses/by/2.0/fr/\", \"source\": \"infoclimat.fr\", \"metadonnees\": \"https://www.infoclimat.fr/stations/metadonnees.php?id=000R5\"}",
+          "{\"license\": \"Etalab Open License\", \"url\": \"https://www.etalab.gouv.fr/licence-ouverte-open-licence\", \"source\": \"Meteo-France via infoclimat.fr\", \"metadonnees\": \"https://donneespubliques.meteofrance.fr/metadonnees_publiques/fiches/fiche_59343001.pdf\"}",
+          "{\"license\": \"CC BY\", \"url\": \"https://creativecommons.org/licenses/by/2.0/fr/\", \"source\": \"infoclimat.fr\", \"metadonnees\": \"https://www.infoclimat.fr/stations/metadonnees.php?id=STATIC0010\"}"
+        ],
+        "city": [
+          "La Madeleine",
+          "Ichtegem"
+        ],
+        "state": [
+          "-/-"
+        ],
+        "hardware": [
+          "other"
+        ],
+        "software": [
+          "EasyWeatherPro_V5.1.6",
+          "EasyWeatherV1.6.6"
+        ]
+      }
+    },
+    "comparison": {
+      "fields_only_in_s3": [],
+      "fields_only_in_mongo": [
+        "_id"
+      ],
+      "dtype_mismatches": {}
+    },
+    "duplicate_key_checks": {
+      "id": {
+        "duplicate_count": 0,
+        "examples": []
+      }
+    },
+    "missing_comparison": {
+      "_id": {
+        "s3_missing": null,
+        "mongo_missing": 0
+      },
+      "longitude": {
+        "s3_missing": 0,
+        "mongo_missing": 0
+      },
+      "latitude": {
+        "s3_missing": 0,
+        "mongo_missing": 0
+      },
+      "hardware": {
+        "s3_missing": 4,
+        "mongo_missing": 4
+      },
+      "type": {
+        "s3_missing": 2,
+        "mongo_missing": 2
+      },
+      "city": {
+        "s3_missing": 4,
+        "mongo_missing": 4
+      },
+      "elevation": {
+        "s3_missing": 0,
+        "mongo_missing": 0
+      },
+      "license": {
+        "s3_missing": 2,
+        "mongo_missing": 2
+      },
+      "name": {
+        "s3_missing": 0,
+        "mongo_missing": 0
+      },
+      "id": {
+        "s3_missing": 0,
+        "mongo_missing": 0
+      },
+      "software": {
+        "s3_missing": 4,
+        "mongo_missing": 4
+      },
+      "state": {
+        "s3_missing": 4,
+        "mongo_missing": 4
+      }
+    }
+  }
+]

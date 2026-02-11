@@ -1,0 +1,25 @@
+py test_integrity.py --mongo-uri "mongodb://admin:1234@localhost:27017,localhost:27018,localhost:27019/?replicaSet=rs0" --aws-access-key "AKIARCPQHCAP46LJXOUG" --aws-secret-key "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" --region "eu-north-1" --bucket "oc-sm" --prefix "migration_data/"
+
+py test_replication.py --adress1 localhost:27017 --adress2 localhost:27018 --adress3 localhost:27019 --db database_test --u admin --p 1234
+
+py test_response_time.py --uri "mongodb://admin:1234@localhost:27017,localhost:27018,localhost:27019/?replicaSet=rs0" --db weather_records --collection data --find_query "{\"id_station\": \"ILAMAD25\", \"dh_utc\": {\"$gte\": \"2024-10-03T00:00:00Z\", \"$lt\": \"2024-10-04T00:00:00Z\"}}"
+
+
+
+
+
+
+
+
+
+
+py test_integrity.py --mongo-uri "mongodb://admin:1234@13.60.254.223:27017,13.62.58.152:27017,13.51.69.233:27017/?replicaSet=rs0"
+
+py test_replication.py --adress1 13.60.254.223:27017 --adress2 13.62.58.152:27017 --adress3 13.51.69.233:27017 --db database_test
+
+py test_response_time.py --uri "mongodb://admin:1234@13.60.254.223:27017,13.62.58.152:27017,13.51.69.233:27017/?replicaSet=rs0" --db weather_records --collection data --find_query "{\"id_station\": \"ILAMAD25\", \"dh_utc\": {\"$gte\": \"2024-10-03T00:00:00Z\", \"$lt\": \"2024-10-04T00:00:00Z\"}}"
+
+
+
+
+docker run -d --name=redpanda-1 --rm --network pandonline -p 9092:9092 -p 9644:9644 docker.redpanda.com/redpandadata/redpanda:latest redpanda start --advertise-kafka-addr redpanda-1 --overprovisioned --smp 1 --memory 1G --reserve-memory 500M --node-id 0 --check=false

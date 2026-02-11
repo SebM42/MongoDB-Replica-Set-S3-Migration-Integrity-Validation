@@ -1,0 +1,7 @@
+FROM mongo:7.0
+
+COPY mongo-keyfile /etc/mongo-keyfile
+
+RUN chmod 400 /etc/mongo-keyfile && chmod 700 /etc
+
+ENTRYPOINT ["mongod", "--dbpath", "/data/db", "--replSet", "rs0", "--keyFile", "/etc/mongo-keyfile", "--bind_ip_all"]
