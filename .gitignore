@@ -2,7 +2,7 @@
 mongo-data/
 schemas/
 data_transform.ipynb
-guest_accessKey.csv
+guest_accessKeys.csv
 logigramme.drawio
 old_docker-compose.yml
 old-init-replica.js
